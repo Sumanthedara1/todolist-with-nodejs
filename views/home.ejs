@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>todolist </title>
+        <link rel="stylesheet" type="text/css" href="home.css">
+    
+    </head>
+
+<body>
+
+    <section id="s1">
+        
+    <h1>To DO List app</h1>
+ 
+    <form action="/addnewtodo" method="post">
+        <!-- form which submits about todo task -->
+    <div action="" id="description-text">
+
+       
+        <h3>Description</h3>
+
+         <input type="text" id="descrip" name="description" placeholder="enter description" required>
+        
+
+    </div>
+     <div  id="datencate">
+      
+        <div id="cate">
+        <h3>Category</h3>
+        <!-- <div> -->
+        <select name="categ" required >
+            <option>personal</option>
+            <option>School</option>
+            <option>cleaning</option>
+            <option>work</option>
+            <option>Other</option>
+
+        </select>
+        </div>
+        <div id="dt">
+                <h3>Due date</h3>
+         
+            <input type="date" name="dat" required id="date">
+         
+        </div>
+
+    </div>
+
+
+
+
+       <!-- submit buttons of our forms -->
+  <div id="addndel">
+
+        <button type="submit" style="background-color: red;">
+
+            <i class="fas fa-plus"></i>
+             Add task
+        </button>
+
+        <button type="submit" form="tasks" style="background-color:gray;">
+        
+            <i class="fas fa-trash"></i>
+            Delete tasks
+        </button>
+        
+
+
+
+        
+
+
+    </div>
+    </form>
+
+    <form action="/deletechecked" method="post" id="tasks">
+         
+ <!-- form which deletes -->
+        <div id="eachtask">
+            <!-- forloop to put all data of mongodb in our ejs file -->
+                <% for (let i of list_todo){ %>
+                    <div id="tasktodo">
+                    <div >
+                  
+                        <input id="chk" name= <%= i._id %> type="checkbox">
+                        <span>
+                        <p id="txt"><%= i.description %></p>
+                        <p><i class="fas fa-calendar-alt"></i><%= i.date %></p>
+                      </span>
+                    </div>
+
+
+
+                    <div id="purpose" style="background-color: orange; color: white;"><p><%= i.category %></p></div>
+                        
+                    </div>
+              
+                <% } %>
+        </div>
+           
+    
+             
+    
+    </form>
+    
+
+
+   </section>
+
+
+
+
+</body>
+
+
+<script src="https://kit.fontawesome.com/d56f904d65.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="home.js"></script>
+
+</html>

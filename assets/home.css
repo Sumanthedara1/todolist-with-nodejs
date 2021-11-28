@@ -1,0 +1,177 @@
+body{
+    background-color: #7e7c7e;
+}
+h1{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    color: gray;
+ 
+}
+#s1{
+    width: 50%;
+    margin: auto;
+    background-color: #fcfafc;
+    z-index: 100;
+    height: auto;
+}
+#description-text {
+    height: auto;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid gray;
+  
+    margin: 0;
+}
+ h3{
+    margin: 0;
+}
+#description-text input{
+    border:1px solid white;
+    height: 40px;
+    margin: 0;
+    width: 100%;
+    border: 0;
+}
+/* removing unecesary borders on focus */
+input:focus{
+    border: none;
+    outline: 0;
+    border-color: inherit;
+    box-shadow: none;
+}
+  
+  select:focus{
+    border: none;
+    outline: 0;
+    border-color: inherit;
+    box-shadow: none;
+}
+  option:focus {
+    border: none;
+    border-color: inherit;
+    outline: 0;
+    box-shadow: none;
+  }
+
+#datencate{
+   
+    margin: 0;
+    display: flex;
+}
+input {
+    border: none;
+}
+
+#datencate div{
+    height: 60px;
+    margin: 0;
+   
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+   
+
+}
+
+/* styling dates and catgories */
+
+  select{
+    margin: 0px 5px;
+  border: none;
+    width: 90%;
+}
+#dt{
+    width: 50%;
+    
+    border-left: 1px solid gray;
+    border-right: none;
+  
+    height: 60px;
+    line-height: 75%;
+ }
+
+#cate{
+    width: 50%;
+    height: 60px;
+    line-height: 75%;
+}
+h3{
+    margin:  5px ;
+}
+input{
+    margin:5px;
+    /* width: 90%; */
+}
+
+#date {
+    margin: 0px 5px;
+}
+/* styling add and del buttons */
+
+#addndel {
+    text-align: center;
+    height: 80px;
+  
+  
+}
+#addndel button{
+    margin: 22px;
+    height: 50px;
+    width: 150px;
+  
+}
+#tasktodo{
+    display: flex;
+    min-height: 80px;
+    height: auto;
+    justify-content: space-between;
+    border: 1px solid gray;
+}
+#tasks p{
+    margin: 15;
+}
+#tasks input {
+    margin: 15;
+}
+
+
+/* stylinhg the tasks */
+
+#tasktodo div {
+    display: flex;
+    padding: 2px;
+    
+}
+#chk{
+    border: 1px solid black; 
+}
+span p{
+    line-height: 50%;
+}
+#purpose{
+    position: relative;
+    height: 30px;
+    width: 80px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+
+}
+#dt input{
+    width: 90%;
+}
+#category{
+    font-size: 15px;
+}
+#purpose p{
+    margin: auto;
+}
+
+i{
+    height: 20px;
+    width: 20px;
+}
+
+#tasks{
+    font-weight: bold;
+}
