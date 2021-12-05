@@ -5,13 +5,12 @@
  ![Stopwatch GIF](https://github.com/Sumanthedara1/todolist-with-nodejs/blob/main/kio.gif)
  
 
-#As show above you can add delete tasks
 
 
 
 
-#How to run the app locally:
+###How to run the app locally:
 
-Run npm install to install all needed dependencies
-Then start the server using node index.js
-Navigate to your browser http://localhost:3000/ to view the app
+-Run npm install to install all needed dependencies
+-Then start the server using node index.js
+-Navigate to your browser http://localhost:3000/ to view the app
